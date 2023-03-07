@@ -1,0 +1,134 @@
+/*Antes que nada decir que creo que está sobre explicado pero no se mucho sobre esto. Me refiero a no se
+si lo normal es explicarlo tanto o no o si es necesario hacerlo así para una buena valoración.
+Un saludo*/
+
+/*IDS*/
+
+/* Cuadrado de investigadores bajo H1*/
+#researchers {
+  background: #C3A492;/*Color de fondo del recuadro*/
+  color: white;/*Color letras*/
+  text-align: right;/*Alineamos texto a la derecha*/
+  margin: 0px 40px;/*Otorgamos un margen a derecha y izquierda*/
+  padding: 10px;/*Rellenamos (padding) alrededor del recuadro*/
+}
+    /*Se usa para darle a la fecha de la investigación un estilo en cursiva y un menor tamaño*/
+    #researchers .italic{
+      font-style: italic;/*cursiva*/
+      font-size: 16px;/*tamaño texto*/
+    }
+
+/*Recuadro de pie de pagina con autores y link*/
+#footer {
+  background: #C3A492;/*Color fondo recuadro*/
+  padding: 20px 30px 20px 30px;/*Relleno alrededor del recuadro*/
+  width: 1200px;/*Ancho recuadro*/
+  margin: auto;/*Centramos recuadro*/
+  font-size: 16px;/*Tamaño fuente*/
+  text-align: center;/*Alineado texto*/
+  color: white;/*Color texto*/
+}
+    /*Damos color a los links del pie de pagina. Inherit bebe del color de #footer*/
+    #footer a{
+      color: inherit;
+    }
+
+/*ELEMENTS*/
+
+/*Todo lo visible. "El fondo de la página sobre el cual agregamos todo"*/
+body {
+  background-color: #FCE4CA; /*Color fondo*/
+  margin: 0; /*Margin y padding 0 hacen que no haya sitio entre la parte interna y externa del box (recuadro)*/
+  padding: 0;
+  font-size: 20px;/* tamaño fuente*/
+}
+
+/*Estilo de fuente del header*/
+header{
+  font-family: arial;
+}
+    /*Estilo de fuente del titulo del header*/
+    header h1{
+      font-size: 2em; /*Tamaño fuente*/
+      margin: auto;/*Centrado elemento*/
+      padding: 20px 0px 20px 0px;/*Relleno alrededor de la box (recuadro)*/
+      text-align: center;/*Centrado del texto dentro del recuadro*/
+      line-height: 40px;/*Interlineado*/
+    }
+
+/*Subrayado de los titulos h3*/
+h3{
+  text-decoration: underline;
+}
+    /*Eleccion primera letra titulos h3*/
+    h3:first-letter{
+      font-size: 30px;/*Tamaño letra*/
+    }
+
+/*Tratado de imagenes que usen elemento figure*/
+figure {
+  text-align: center;/*Alineado de la imagen*/
+}
+    /*Tamaño imagen*/
+    figure img{
+    width: 40%;
+  }
+
+/*CLASS*/
+
+/*Contenedor de todas las secciones de la página*/
+.container {
+  padding: 0px 30px 10px 30px;/*Relleno box (recuadro) alrededor*/
+  background-color: white; /*Color de fondo*/
+  width: 90%; /*Redimensionado al 90% ancho*/
+  max-width: 1200px;/*PX maximos de ancho*/
+  line-height: 30px;/*Interlineado*/
+  margin: 0em auto;  /*centramos el contenido horizontalmente*/
+}
+
+/*Crea el "subrayado" largo*/
+.longunderline{
+  border-bottom-color: #C3A492;/*Color subrayado*/
+  border-bottom-style: solid;/*Linea solida*/
+  border-bottom-width: 2px;/*ancho subrayado*/
+  width:1200px;/*ancho subrayado*/
+}
+
+/*Caja pregunta*/
+.preguntacuadro{
+  background-color: #FCE4CA;/*Color caja pregunta*/
+  width: 600px;/*Ancho caja pregunta*/
+  padding: 30px 30px 30px 30px;/*Relleno alrededor caja*/
+  margin-left: 50px;/*Que tan separado está la caja de la izquierda*/
+  font-weight: bold;/*Texto en negrita*/
+}
+
+    /*CLASS: TEXT STYLE. Aquí le damos estilo a los textos*/
+
+/*Negrita*/
+.bold{
+  font-weight: bold;
+}
+
+/*Cursiva y color al texto*/
+.colouredtext{
+  font-style: italic;
+  color: #C3A492;
+}
+
+/*Subrayado en puntitos y cursiva*/
+.dotunderanditalic{
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+/*Identa el texto X pixeles*/
+.ident{
+  text-indent: 50px;
+}
+
+/*Cursiva*/
+.italic{
+  font-style: italic;
+}
